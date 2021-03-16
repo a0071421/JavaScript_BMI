@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BMI Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico"> 
+	<meta name="description" content="BMI計算機‎">
+
+	<meta property="og:title" content="BMICalculator"/>
+	<meta property="og:description" content="BMI計算機‎"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.hexschool.com/"/>
+	<meta property="og:image" content="https://upload.cc/i1/2020/04/14/1J9ekE.png"/>
+
+	<link rel="apple-touch-icon" href="https://upload.cc/i1/2020/03/26/gCV5Sv.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<!-- IE 相容性，使得使用者不會因為不同IE版本而顯示不同 -->
+	
+
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f2fdb5a1bd.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+
+</head>
+<body>
+
+  <div class="banner">
+	<div class="container">
+		<h1><a class="logo" href="https://zh.wikipedia.org/zh-tw/%E8%BA%AB%E9%AB%98%E9%AB%94%E9%87%8D%E6%8C%87%E6%95%B8" target="_blank">BMICalculator</a></h1>
+		<div class="inputText">
+			<label for="Height">身高cm</label>
+			<input id = "Height" type="number" placeholder="請輸入身高">
+			<label for="Height">體重kg</label>
+			<input id = "Weight" type="number" placeholder="請輸入體重">
+	
+		</div>
+		
+		<div class="result">
+		  <input class="resultBtn" type="button" value="看結果">
+		  <div class="resultContainer">
+            <div class="resultCircle">
+				<span class="resultContent"></span>
+				<span>BMI</span>
+				<a href="#" class="refresh"></a>
+			  </div>
+			<span></span>
+		  </div>
+		  
+			
+		</div>
+		
+	</div>
+	
+  </div>
+
+  <div class="content">
+	<div class="container">
+		<h2>BMI紀錄</h2>
+		<ul class="list">
+		</ul>
+
+		<div class="clean">
+			<a href="#" class="cleanBtn">清除全部歷史紀錄</a>
+		</div>
+		<table class="bmiTable">
+			<thead>
+				<tr>
+					<th>成人肥胖定義</th>
+					<th>身體質量指數(BMI)(kg/m^2)</th>
+					<th>腰圍(cm)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>體重過輕</td>
+					<td>18.5<=BMI<24</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>體位異常</td>
+					<td>
+						<p>
+							過重：24<=BMI<27<br>
+							輕度肥胖：27 <= BMI < 30<br>
+							中度肥胖：30 <= BMI < 35<br>
+							重度肥胖：BMI >= 35
+					    </p>
+					</td>
+					<td>男性：>= 90 公分<br>
+						女性：>= 80 公分</td>
+				</tr>
+
+				<tr>
+					<td colspan="3"><img src="./img/bmi.jpg" alt="bmical"></td>
+				</tr>
+		    </tbody>
+		</table>
+		
+
+		
+	</div>
+	
+  </div>
+
+
+  <div class="footer">
+    <a class="logo" href="https://zh.wikipedia.org/zh-tw/%E8%BA%AB%E9%AB%98%E9%AB%94%E9%87%8D%E6%8C%87%E6%95%B8" target="_blank">BMICalculator</a>
+  </div>
+	  
+  <script src="js/all.js"></script>
+</body>
+</html>
